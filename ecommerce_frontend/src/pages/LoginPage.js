@@ -108,7 +108,7 @@ const LoginPage = () => {
                 </form>
                 <OauthSender
                     authorizeUrl="https://github.com/login/oauth/authorize"
-                    clientId="Ov23limPvurAUkypiyUp"
+                    clientId="your_github_client_id"
                     redirectUri="http://localhost:3000/login?provider=github"
                     render={({ url }) => (
                         <a href={url} className="btn btn-dark btn-github">
@@ -118,7 +118,7 @@ const LoginPage = () => {
                 />
                 <OauthSender
                     authorizeUrl="https://www.linkedin.com/oauth/v2/authorization"
-                    clientId="771apgs97hek9l" // replace with your LinkedIn Client ID
+                    clientId="your_linkedin_client_id" // replace with your LinkedIn Client ID
                     redirectUri="http://localhost:3000/login?provider=linkedin"
                     scope="r_liteprofile r_emailaddress"
                     render={({ url }) => (
@@ -129,7 +129,7 @@ const LoginPage = () => {
                 />
                 <OauthSender
                     authorizeUrl="https://www.facebook.com/v10.0/dialog/oauth"
-                    clientId="1177202586887125" // replace with your Facebook Client ID
+                    clientId="your_facebook_client_id" // replace with your Facebook Client ID
                     redirectUri="http://localhost:3000/login?provider=facebook"
                     scope="email public_profile"
                     render={({ url }) => (
