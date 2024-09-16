@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the code for an E-Commerce application with both backend and frontend components. The backend is built with Spring Boot and handles business logic, database interactions, and OAuth authentication. The frontend is developed using React and provides the user interface.
+This repository contains the code for an E-Commerce application with both backend and frontend components. The backend is built with Node js and handles business logic, database interactions, and OAuth authentication. The frontend is developed using React and provides the user interface.
 
 
 ## Table of Contents
@@ -19,7 +19,7 @@ This repository contains the code for an E-Commerce application with both backen
 
 ## Backend
 
-The backend is developed using Spring Boot and provides RESTful APIs for the e-commerce application. It includes user authentication, product management, cart functionality, order processing, and more.
+The backend is developed using Node js and provides RESTful APIs for the e-commerce application. It includes user authentication, product management, cart functionality, order processing, and more.
 
 ### Features
 - User authentication with JWT
@@ -31,13 +31,9 @@ The backend is developed using Spring Boot and provides RESTful APIs for the e-c
 - Role-based access control
 
 ### Technologies Used
-- Java 17
-- Spring Boot
-- Hibernate
-- MySQL
-- Swagger OpenAPI
-
-
+- Node js
+- MongoDB
+- React JS
 
 
 
@@ -59,32 +55,11 @@ The backend is developed using Spring Boot and provides RESTful APIs for the e-c
 
 
 
-### Facebook
-
-
  **Setting in Backend:**
 
-1. **Open `src/main/java/controller/AuthController.java`** or your application configuration file where OAuth credentials are set.
+1. **Open `config/.env`** or your application configuration file where OAuth credentials are set.
 
-2. **GitHub:**
-   - Search for `clientId` and `clientSecret` in the `AuthController` class or your application configuration.
-   - Set the GitHub Client ID and Secret Key in the `AuthController` class:
 
-     ```java
-     // GitHub OAuth configuration
-     private static final String GITHUB_CLIENT_ID = "your-github-client-id";
-     private static final String GITHUB_CLIENT_SECRET = "your-github-client-secret";
-     ```
-
-3. **Facebook:**
-   - Similarly, search for `clientId` and `clientSecret` in the `AuthController` class or your application configuration.
-   - Set the Facebook Client ID and Secret Key:
-
-     ```java
-     // Facebook OAuth configuration
-     private static final String FACEBOOK_CLIENT_ID = "your-facebook-client-id";
-     private static final String FACEBOOK_CLIENT_SECRET = "your-facebook-client-secret";
-     ```
 
 **Setting in Frontend:**
 
@@ -149,30 +124,17 @@ Replace `your-github-client-id`, `your-github-client-secret`, `your-facebook-cli
 ## Installation
 
 ### Prerequisites
-- Java 17
-- MySQL
+- MongoDB
 - Node.js and npm
 
-### Backend Setup
-  ## Default User Credentials
 
-   For initial setup, you can use the following default user credentials:
-
-   - **Email:** admin@gmail.com
-   - **Password:** admin123
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/gajanan-kharat/java-ecommerce-microservice.git
-   cd Ecommerce_backend
-   mvn clean install
-   mvn spring-boot:run
-
-### Frontend Setup
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/gajanan-kharat/java-ecommerce-microservice.git
-   cd Ecommerce_frontend
+   git clone https://github.com/ShankarMadane8/Ecommerce.git
+  ## backend and Frontend
+  ```bash
+   cd ecommerce_backend   
+   cd ecommerce_frontend
    npm install
    npm start
