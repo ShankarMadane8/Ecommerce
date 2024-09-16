@@ -8,6 +8,7 @@ const productRoutes = require('./routes/productRoutes');
 const orderRoutes = require('./routes/orderRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const errorHandler = require('./middleware/errorMiddleware');
+const authRoutes = require('./routes/auth');
 
 const cors = require('cors');
 
@@ -27,6 +28,7 @@ app.use('/api', categoryRoutes);
 app.use('/api', productRoutes);
 app.use('/api', orderRoutes);
 app.use('/api', cartRoutes);
+app.use('/auth', authRoutes);
 app.use(errorHandler); 
 
 

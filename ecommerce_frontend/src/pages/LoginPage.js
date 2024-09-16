@@ -31,13 +31,12 @@ const LoginPage = () => {
     useEffect(() => {
         const queryParams = new URLSearchParams(window.location.search);
         const code = queryParams.get('code');
-        const provider = queryParams.get('provider'); // Add provider parameter to determine the callback
-
+        const provider = queryParams.get('provider'); 
         if (code && provider) {
             const fetchAccessToken = async () => {
                 try {
-                    const response = await axios.post(`http://localhost:8181/auth/${provider}/callback`, { code });
-                    localStorage.setItem('token', response.data);
+                    const response = await axios.post(`http://localhost:5000/auth/${provider}/callback`, { code });
+                    localStorage.setItem('token', response.data.token);
                     navigate('/dashboard');
                 } catch (error) {
                     console.log("error: ", error);
