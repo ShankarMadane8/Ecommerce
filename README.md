@@ -132,9 +132,22 @@ Replace `your-github-client-id`, `your-github-client-secret`, `your-facebook-cli
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/ShankarMadane8/Ecommerce.git
-  ## backend and Frontend
-  ```bash
    cd ecommerce_backend   
    cd ecommerce_frontend
    npm install
    npm start
+
+## Create User (use Postman)
+url : http://localhost:5000/api/register
+```bash
+{
+  "email": "example@gmail.com",
+  "firstName": "admin",
+  "lastName": "admin",
+  "phoneNo": 1234567890,
+  "password": "admin@123",
+  "role": "ADMIN",
+  "userType": "admin"
+}
+
+
