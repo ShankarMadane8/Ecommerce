@@ -1,0 +1,85 @@
+.product-add-form-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left; /* Ensure left alignment */
+}
+
+.product-add-form-box {
+  max-width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  justify-content: flex-start; /* Align form row items to start */
+}
+
+.form-group {
+  flex: 1 1 100%; /* Full width for each form group */
+  margin-bottom: 10px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 12px; /* Smaller text */
+  text-align: left; /* Align labels to the left */
+}
+
+.form-input, .form-textarea {
+  width: 100%; /* Full width */
+  padding: 8px; /* Adjust padding if needed */
+  font-size: 14px; /* Smaller text */
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-textarea {
+  resize: none;
+}
+
+.btn-submit {
+  width: 100%; /* Full width */
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  font-size: 16px; /* Slightly smaller text */
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
+
+.alert {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+}
+
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+

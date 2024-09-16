@@ -1,0 +1,143 @@
+.cart-container {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-image {
+  flex: 1;
+}
+
+.cart-item-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  flex: 2;
+  margin-left: 15px;
+}
+
+.fixed-position {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 150px;
+}
+
+.price-detail {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.price-detail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.price-detail-item h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #343a40;
+}
+
+.price-detail-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.price-detail-item .icon {
+  font-size: 20px;
+  color: #007bff;
+  margin-right: 10px;
+}
+
+.savings-message {
+  margin: 10px 0;
+  color: #28a745;
+}
+
+.checkout-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #0069d9;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart-item-info {
+    margin-left: 0;
+  }
+}
+
+.ml-5{
+  margin-left: 5px;
+}
+
+.discount{
+  margin-left: 10px;
+  color: #28a745;
+}
+
+.final-price {
+  color: #007bff;
+  font-weight: bold;
+}

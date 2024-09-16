@@ -1,0 +1,9 @@
+.navbar-top {
+  font-size: 14px; /* Adjust the font size */
+  padding: 5px;
+  padding-bottom: 0; /* Adjust if needed */
+}
+
+.close-btn:hover{
+  color: red;
+}

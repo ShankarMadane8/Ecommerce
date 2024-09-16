@@ -1,0 +1,108 @@
+/* Set a background color for the entire page */
+html body {
+  background-color: #99a8ca96 !important; 
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the registration form on the page */
+.registration-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  position: relative;
+}
+
+/* Add a semi-transparent background to the form */
+.registration-form {
+  background-color: rgba(228, 222, 222, 0.8); /* White background with 80% opacity */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to the background behind the form */
+}
+
+/* Styling for the heading */
+.registration-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Styling for labels */
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Styling for form controls (inputs, select, etc.) */
+.form-control {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Styling for the submit button */
+.btn-block {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #007bff; /* Bootstrap primary button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-block:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Styling for invalid input feedback */
+.is-invalid {
+  border-color: #e3342f;
+}
+
+.error-message {
+  color: #e3342f;
+  margin-top: 5px;
+}
+
+/* Optional: Add a background image with low opacity */
+.registration-form-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+/* Styling for secondary button */
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.login-link {
+  margin-top: 10px;
+}

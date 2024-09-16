@@ -1,0 +1,60 @@
+.dashboard-content {
+  padding: 20px;
+  background-color: #f0f4f8; /* Light background for contrast */
+}
+
+.spinner-container {
+  margin-top: 50px;
+}
+
+.no-products {
+  text-align: center;
+  color: #6c757d; /* Gray color for text */
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .dashboard-content {
+      padding: 10px;
+  }
+}
+
+.small-transparent-bg {
+  height: 40px; /* Set the height as needed */
+  background-color: rgba(255, 165, 0, 0.2); /* Faint orange with transparency */
+  padding: 10px; /* Adjust padding as needed */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; /* Center items vertically */
+}
+
+/* Ensure product cards are spaced properly */
+.product-row .col {
+  padding: 0.5rem; /* Reduce space between cards */
+}
+
+.product-card {
+  /* Ensure cards don't expand too much on larger screens */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for product card sizes */
+@media (min-width: 576px) {
+  .product-card {
+    width: 100%; /* Ensure cards fit within the column */
+  }
+}
+
+@media (min-width: 768px) {
+  .product-card {
+    width: 100%; /* Ensure cards fit within the column */
+  }
+}
+
+@media (min-width: 992px) {
+  .product-card {
+    width: 100%; /* Ensure cards fit within the column */
+  }
+}

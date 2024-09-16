@@ -1,0 +1,120 @@
+/* Base Navbar styles */
+.ecom-navbar {
+  background-color: #43ad6c !important; 
+  padding: 10px 20px; 
+}
+
+.ecom-navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+  transition: top 0.3s;
+}
+
+/* Navbar extra section */
+.navbar-extra {
+  background-color: #f8f9fa; 
+  padding: 10px 0; 
+  width: 100%;
+  position: relative; 
+  display: none; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-extra {
+  position: fixed;
+  top: 71px;
+  width: 100%;
+  z-index: 1020; 
+  background-color: #f8f9fa;
+  transition: top 0.3s;
+}
+
+/* Show navbar-extra on large screens */
+@media (min-width: 992px) {
+  .navbar-extra {
+    display: flex;
+  }
+}
+
+/* Icon styles */
+.icon {
+  color: white;
+  margin-left: 1rem;
+}
+
+/* Search input styles */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-input-group {
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+}
+.search-icon {
+  height: 47px;
+  background-color:orange !important;
+}
+.search-icon .search-button {
+  background: transparent;
+  border: none;
+  font-size: 16px; 
+  cursor: pointer; 
+}
+
+.search-button:focus {
+  outline: none;
+}
+
+.search-button:hover {
+  color: #e0e0e07a;
+}
+
+/* Flexbox layout adjustments */
+.d-flex.flex-grow-1 {
+  flex: 1;
+}
+
+/* Links and dropdown styling */
+.left-links, .right-links {
+  display: flex;
+  align-items: center;
+}
+
+.left-links {
+  margin-right: auto;
+}
+
+.right-links {
+  margin-left: auto;
+}
+
+.left-links .nav-link,
+.right-links .nav-link {
+  color: #333;
+  margin-left: 1rem;
+}
+
+.dropdown-toggle {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 14px; 
+  text-decoration: none;
+}
+
+.dropdown-toggle::after {
+  display: none; 
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}

@@ -1,0 +1,151 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .popup-content {
+    flex-direction: column;
+  }
+
+  .popup-image {
+    margin-bottom: 20px;
+  }
+}
+
+.popup-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.popup-details {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .popup-details {
+    margin-left: 0;
+  }
+}
+
+.popup-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popup-stock, .popup-description, .popup-price {
+  margin: 10px 0;
+}
+
+.popup-options {
+  margin: 10px 0;
+}
+
+.popup-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn-add-to-cart, .btn-more-info {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-add-to-cart {
+  background-color: #28a745;
+}
+
+.btn-more-info {
+  background-color: #007bff;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.addCartDive {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #43ad6c;
+  border-radius: 4px;
+  background-color: #43ad6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.btn-close :hover{
+  color: red;
+}
+
+.addCartDive button {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  color: white;
+  border: 1px solid #43ad6c;
+  border-radius: 4px;
+  background-color: #43ad6c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
